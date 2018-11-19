@@ -1,0 +1,52 @@
+.checked {
+  text-decoration: line-through;
+  z-index: 2;
+}
+ul {
+  list-style:none;
+}
+.activeBtn {
+  background-color: #c4c4ef;
+}
+.hide {
+  display: none;
+}
+.input-box {
+  padding: 5px;
+  width: 200px;
+}
+h1 {
+  border-bottom: 2px solid #00000099;
+}
+p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.btnBlue {
+  background-color: blue;
+  height: 17px;
+  width: 18px;
+  border-radius: 35%;
+  z-index: 0;
+}
+.btnRed {
+  background-color: red;
+  height: 17px;
+  width: 18px;
+  border-radius: 35%;
+}
+.btnBlack {
+  background-color: black;
+  height: 17px;
+  width: 18px;
+  border-radius: 35%;
+}
