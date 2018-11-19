@@ -7,32 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<!-- <div id="application">
-  <my-component></my-component>
-</div>
-
-<div id="app">
-  <input type="text" v-model="message" placeholder="What needs to be done?">
-  <p>
-    つ【{{ message }}】
-  </p>
-</div>
-
-<div id="checkbox">
-  <input type="checkbox" v-model="checked">
-  {{ checked }}
-</div>
-
-<div id="application">
-  <my-component></my-component>
-  <test-component></test-component>
-</div>
-
-<div id="practice" style="margin-bottom: 50px;">
-  <button-counter></button-counter>
-</div> -->
-
+  
 <h1><a href="index.html">TODOS</a></h1>
   <div id="todos">
     <input class="input-box" v-model="taskName" placeholder="What needs to be done?" v-on:change="addTask" type="text">
@@ -50,7 +25,7 @@
         <input v-show="item.edit == true" v-model="item.taskName" v-on:blur="updateTask(index)" v-on:keyup.enter="updateTask(index)">
       </li>
     </ul>
-    <p>▶︎ {{ taskCount == '1' ? taskCount + ' item' : taskCount + ' items' }} left {{ taskCount == '0' ? '＼(^-^)／' : '' }}</p>
+    <p>{{ taskCount == '1' ? taskCount + ' item' : taskCount + ' items' }} left {{ taskCount == '0' ? '＼(^-^)／' : '' }}</p>
     <button v-on:click="showAll">all</button>
     <button v-on:click="showActive">active</button>
     <button v-on:click="showCompleted">completed</button>
